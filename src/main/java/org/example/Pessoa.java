@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Random;
+
 public class Pessoa {
     private int idade;
     private float peso;
@@ -29,7 +31,25 @@ public class Pessoa {
     public Pessoa(boolean estaVivo){
         this.vivo = estaVivo;
     }
+    //metodos
+    public String estaVivo(){
+        if(vivo){
+            return "SIM";
+        }
+        return "NÃO";
+    }
+    public static int idadeAleatoria(){
+        Random r = new Random();
+        return  r.nextInt();
+    }
+    public static String nomeDaClasse(){
+        String nomeClasse = "Pessoa";
 
+        return "Esta classe se chama "+nomeClasse + " / idade aleatoria: " + idadeAleatoria();
+    }
+
+
+    //setters e getters
     public int getIdade() {
         return this.idade;
     }

@@ -20,7 +20,11 @@ public class Principal {
         System.out.println(p1.getAltura());
         System.out.println(p1.getCidade());
         System.out.println(p1.getEstado());
-        System.out.println(p1.isVivo());
+        System.out.println(p1.estaVivo());
+
+        //System.out.println(Pessoa.estaVivo());
+        System.out.println(Pessoa.nomeDaClasse());
+        System.out.println(Pessoa.idadeAleatoria());
 
         System.out.println("Pessoa 2");
         p1.setNome("Micalateia");
@@ -35,11 +39,8 @@ public class Principal {
         System.out.println(p1.getAltura());
         System.out.println(p1.getCidade());
         System.out.println(p1.getEstado());
-        System.out.println(p1.isVivo());
+        System.out.println(p1.estaVivo());
 
-
-        System.out.println("Pessoa 3");
-        System.out.println(p3.isVivo());
 
 
     }
