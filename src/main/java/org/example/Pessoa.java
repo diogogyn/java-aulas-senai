@@ -31,12 +31,22 @@ public class Pessoa {
     public Pessoa(boolean estaVivo){
         this.vivo = estaVivo;
     }
+
+
     //metodos
     public String estaVivo(){
         if(vivo){
             return "SIM";
         }
         return "NÃO";
+    }
+    public static int idadeAleatoria(int valor, int valor2){
+        Random r = new Random();
+        return  r.nextInt();
+    }
+    public static int idadeAleatoria(int valor){
+        Random r = new Random();
+        return  r.nextInt();
     }
     public static int idadeAleatoria(){
         Random r = new Random();
@@ -47,7 +57,6 @@ public class Pessoa {
 
         return "Esta classe se chama "+nomeClasse + " / idade aleatoria: " + idadeAleatoria();
     }
-
 
     //setters e getters
     public int getIdade() {
@@ -104,5 +113,10 @@ public class Pessoa {
 
     public void setVivo(boolean vivo) {
         this.vivo = vivo;
+    }
+
+    public float calculaArea(String forma, int area1, int area2){
+
+        return 1.0f;
     }
 }

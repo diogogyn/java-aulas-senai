@@ -25,6 +25,8 @@ public class Principal {
         //System.out.println(Pessoa.estaVivo());
         System.out.println(Pessoa.nomeDaClasse());
         System.out.println(Pessoa.idadeAleatoria());
+        System.out.println(Pessoa.idadeAleatoria(1));
+        System.out.println(Pessoa.idadeAleatoria(1,2));
 
         System.out.println("Pessoa 2");
         p1.setNome("Micalateia");
